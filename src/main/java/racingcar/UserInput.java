@@ -7,7 +7,7 @@ import java.util.List;
 public class UserInput {
 
     public static List<String> inputCarName(){
-        System.out.println("자동차 이름은 쉼표(,)를 기준으로 구분하며 이름은 5자 이하만 가능하다.");
+        System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)");
         String input = Console.readLine();
         checkCarName(input);
         var name = input.split(",");
@@ -15,7 +15,7 @@ public class UserInput {
     }
 
     public static int tryCount(){
-        System.out.println("시도할 횟수를 입력하세요.(1이상의 정수)");
+        System.out.println("시도할 횟수는 몇 회인가요?");
         String input = Console.readLine();
         checkTryCount(input);
         return Integer.parseInt(input.trim());
